@@ -1,6 +1,10 @@
-name: My one more try GitHub Actions Demo
+name: GitHub Actions Demo some
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: [push]
+on:
+  push:
+    branches: [ "develop" ]
+  pull_request:
+    branches: [ "develop" ]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
